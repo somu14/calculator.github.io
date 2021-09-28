@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          
+          .container
+          {
+                margin-top: 30px;
+                margin-left:420px ;
+                border: solid red 5px;
+                width: 400px;
+                height: 450px;
+                border-radius: 10px;
+          }
+          #number1
+          {
+                margin-left:75px;
+                width: 251px;
+                height: 30px;
+                border: solid red 4px;
+                border-radius: 10px;
+                font-size: 20px;
+          }
+          #number2
+          {
+            margin-left:75px;
+                width: 251px;
+                height: 30px;
+                border: solid red 4px;
+                border-radius: 10px;
+                font-size: 20px;
+          }
+          .but
+          {
+                margin-top: 15px;
+                width: 50px;
+                height: 50px;
+                margin-left: 40px;
+                border: solid red 4px;
+                border-radius: 10px;
+                font-size: 20px;
+          }
+          #demo
+          {
+            margin-left:75px;
+                border: solid red 4px;
+                width: 251px;
+                height: 30px;
+                border-radius: 10px;
+                font-size: 25px;
+          }
+
+    </style>
+</head>
+<body>
+      <h1 style="text-align: center;">CALCULATOR</h1>
+<div class="container">
+      <h1 style="text-align: center;">Number1</h1>
+    <input  id="number1" type="number">
+    <h1 style="text-align: center;">Number2</h1>
+    <input  id="number2" type="number">
+    <h1 style="text-align: center;">Answer</h1>
+    <div id="demo">
+    </div>
+    <button class="but" onclick="myFunction()">+</button>
+    <button  class="but" onclick="myFunction1()">-</button>
+    <button class="but" onclick="myFunction2()">×</button>
+    <button  class="but" onclick="myFunction3()">÷</button>
+</div>
+    <script>
+        
+        function myFunction() {
+  let a = document.getElementById("number1").value;
+  let b = document.getElementById("number2").value;
+  let c=a-(-b);
+  console.log(c);
+  document.getElementById("demo").innerHTML = c;
+        }
+        function myFunction1() {
+  let a = document.getElementById("number1").value;
+  let b = document.getElementById("number2").value;
+  let c=a-b;
+  console.log(c);
+  document.getElementById("demo").innerHTML = c;
+        }
+        function myFunction2() {
+  let a = document.getElementById("number1").value;
+  let b = document.getElementById("number2").value;
+  let c=a*b;
+  console.log(c);
+  document.getElementById("demo").innerHTML = c;
+        }
+        function myFunction3() {
+  let a = document.getElementById("number1").value;
+  let b = document.getElementById("number2").value;
+  let c=a/b;
+  console.log(c);
+  document.getElementById("demo").innerHTML = c;
+        }
+    </script>
+</body>
+</html>
